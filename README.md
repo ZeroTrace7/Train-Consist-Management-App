@@ -1,12 +1,37 @@
 # Train Consist Management App
 
-A console-based Java project that simulates how a railway system manages a train consist. Each use case is a focused, runnable example that demonstrates a core data-structure concept in a realistic railway scenario.
+A console-based Java project that models how a railway system manages a train consist. Each use case is a focused, runnable example that teaches one data-structure concept through a realistic train scenario.
+
+## Highlights
+
+- Clear, incremental use cases from initialization to key-value mappings.
+- Real-world train operations modeled with core Java collections.
+- Deterministic console output for easy verification and learning.
+
+## Features (Implemented)
+
+- Initialize a train consist and show initial bogie count (UC1).
+- Add, remove, and check passenger bogies with `ArrayList` (UC2).
+- Enforce unique bogie IDs using `HashSet` (UC3).
+- Maintain ordered consist using `LinkedList` with positional inserts/removals (UC4).
+- Preserve insertion order while preventing duplicates using `LinkedHashSet` (UC5).
+- Map bogie names to capacities using `HashMap` and `entrySet()` iteration (UC6).
+
+## Use Cases
+
+| Use Case | Title | Data Structure |
+| --- | --- | --- |
+| UC1 | Initialize Train and Display Consist Summary | `List` / `ArrayList` |
+| UC2 | Add Passenger Bogies to Train | `ArrayList` |
+| UC3 | Track Unique Bogie IDs | `HashSet` |
+| UC4 | Maintain Ordered Bogie Consist | `LinkedList` |
+| UC5 | Preserve Insertion Order of Bogies | `LinkedHashSet` |
+| UC6 | Map Bogie to Capacity | `HashMap` |
 
 ## Prerequisites
 
 - Java 8+ (JDK)
 - Command line (PowerShell / CMD / Terminal)
-- Git
 
 ## Quick Start
 
@@ -22,18 +47,18 @@ Run a specific use case (example UC1):
 java -cp out UseCase1TrainConsistManagementApp
 ```
 
-Replace `UseCase1TrainConsistManagementApp` with any of the classes below.
+Run all use cases one by one:
 
-## Use Cases Included
+```bash
+java -cp out UseCase1TrainConsistManagementApp
+java -cp out UseCase2TrainConsistManagementApp
+java -cp out UseCase3TrainConsistManagementApp
+java -cp out UseCase4TrainConsistManagementApp
+java -cp out UseCase5TrainConsistManagementApp
+java -cp out UseCase6TrainConsistManagementApp
+```
 
-- UC1: Initialize Train and Display Consist Summary
-- UC2: Add Passenger Bogies to Train (ArrayList Operations)
-- UC3: Track Unique Bogie IDs (HashSet)
-- UC4: Maintain Ordered Bogie Consist (LinkedList)
-- UC5: Preserve Insertion Order of Bogies (LinkedHashSet)
-- UC6: Map Bogie to Capacity (HashMap)
-
-## Source Layout
+## Project Structure
 
 ```
 src/
