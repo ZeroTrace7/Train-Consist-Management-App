@@ -29,6 +29,7 @@ A console-based Java project that models how a railway system manages a train co
 - Sort bogie names alphabetically using `Arrays.sort()` (UC17).
 - Search for a bogie ID in unsorted data using Linear Search (UC18).
 - Search for a bogie ID efficiently using Binary Search on sorted data (UC19).
+- Prevent invalid search operations by throwing `IllegalStateException` on empty data (UC20).
 
 ## Use Cases
 
@@ -53,6 +54,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC17 | Sort Bogie Names Using Arrays.sort() | `Arrays.sort()` |
 | UC18 | Linear Search for Bogie ID | `Linear Search` |
 | UC19 | Binary Search for Bogie ID | `Binary Search` |
+| UC20 | Exception Handling During Search Operations | `IllegalStateException` |
 
 ## Prerequisites
 
@@ -95,6 +97,7 @@ java -cp out UseCase16TrainConsistManagementApp
 java -cp out UseCase17TrainConsistManagementApp
 java -cp out UseCase18TrainConsistManagementApp
 java -cp out UseCase19TrainConsistManagementApp
+java -cp out UseCase20TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -123,6 +126,7 @@ src/
     UseCase17TrainConsistManagementApp.java
     UseCase18TrainConsistManagementApp.java
     UseCase19TrainConsistManagementApp.java
+    UseCase20TrainConsistManagementApp.java
 ```
 
 ## Notes
