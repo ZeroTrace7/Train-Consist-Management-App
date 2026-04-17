@@ -27,6 +27,7 @@ A console-based Java project that models how a railway system manages a train co
 - Safely handle runtime cargo assignment failures using `try-catch-finally` (UC15).
 - Sort passenger bogie capacities manually using Bubble Sort (UC16).
 - Sort bogie names alphabetically using `Arrays.sort()` (UC17).
+- Search for a bogie ID in unsorted data using Linear Search (UC18).
 
 ## Use Cases
 
@@ -49,6 +50,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC15 | Safe Cargo Assignment Using try-catch-finally | `Runtime Exception` |
 | UC16 | Sort Passenger Bogies by Capacity | `Bubble Sort` |
 | UC17 | Sort Bogie Names Using Arrays.sort() | `Arrays.sort()` |
+| UC18 | Linear Search for Bogie ID | `Linear Search` |
 
 ## Prerequisites
 
@@ -89,6 +91,7 @@ java -cp out UseCase14TrainConsistManagementApp
 java -cp out UseCase15TrainConsistManagementApp
 java -cp out UseCase16TrainConsistManagementApp
 java -cp out UseCase17TrainConsistManagementApp
+java -cp out UseCase18TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -115,6 +118,7 @@ src/
     UseCase15TrainConsistManagementApp.java
     UseCase16TrainConsistManagementApp.java
     UseCase17TrainConsistManagementApp.java
+    UseCase18TrainConsistManagementApp.java
 ```
 
 ## Notes
