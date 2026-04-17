@@ -28,6 +28,7 @@ A console-based Java project that models how a railway system manages a train co
 - Sort passenger bogie capacities manually using Bubble Sort (UC16).
 - Sort bogie names alphabetically using `Arrays.sort()` (UC17).
 - Search for a bogie ID in unsorted data using Linear Search (UC18).
+- Search for a bogie ID efficiently using Binary Search on sorted data (UC19).
 
 ## Use Cases
 
@@ -51,6 +52,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC16 | Sort Passenger Bogies by Capacity | `Bubble Sort` |
 | UC17 | Sort Bogie Names Using Arrays.sort() | `Arrays.sort()` |
 | UC18 | Linear Search for Bogie ID | `Linear Search` |
+| UC19 | Binary Search for Bogie ID | `Binary Search` |
 
 ## Prerequisites
 
@@ -92,6 +94,7 @@ java -cp out UseCase15TrainConsistManagementApp
 java -cp out UseCase16TrainConsistManagementApp
 java -cp out UseCase17TrainConsistManagementApp
 java -cp out UseCase18TrainConsistManagementApp
+java -cp out UseCase19TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -119,6 +122,7 @@ src/
     UseCase16TrainConsistManagementApp.java
     UseCase17TrainConsistManagementApp.java
     UseCase18TrainConsistManagementApp.java
+    UseCase19TrainConsistManagementApp.java
 ```
 
 ## Notes
