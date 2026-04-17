@@ -4,7 +4,7 @@ A console-based Java project that models how a railway system manages a train co
 
 ## Highlights
 
-- Clear, incremental use cases from initialization to stream-based filtering.
+- Clear, incremental use cases from initialization to grouped stream reporting.
 - Real-world train operations modeled with core Java collections.
 - Deterministic console output for easy verification and learning.
 
@@ -18,6 +18,7 @@ A console-based Java project that models how a railway system manages a train co
 - Map bogie names to capacities using `HashMap` and `entrySet()` iteration (UC6).
 - Sort passenger bogies by capacity using `Comparator` and custom objects (UC7).
 - Filter passenger bogies by capacity using `Stream` pipelines (UC8).
+- Group bogies by type using `Collectors.groupingBy` (UC9).
 
 ## Use Cases
 
@@ -31,6 +32,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC6 | Map Bogie to Capacity | `HashMap` |
 | UC7 | Sort Bogies by Capacity | `List` + `Comparator` |
 | UC8 | Filter Passenger Bogies Using Streams | `Stream API` |
+| UC9 | Group Bogies by Type | `Collectors.groupingBy` |
 
 ## Prerequisites
 
@@ -62,6 +64,7 @@ java -cp out UseCase5TrainConsistManagementApp
 java -cp out UseCase6TrainConsistManagementApp
 java -cp out UseCase7TrainConsistManagementApp
 java -cp out UseCase8TrainConsistManagementApp
+java -cp out UseCase9TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -79,6 +82,7 @@ src/
     UseCase6TrainConsistManagementApp.java
     UseCase7TrainConsistManagementApp.java
     UseCase8TrainConsistManagementApp.java
+    UseCase9TrainConsistManagementApp.java
 ```
 
 ## Notes
