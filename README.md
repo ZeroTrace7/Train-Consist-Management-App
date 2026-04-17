@@ -26,6 +26,7 @@ A console-based Java project that models how a railway system manages a train co
 - Reject invalid passenger bogies using a custom checked exception (UC14).
 - Safely handle runtime cargo assignment failures using `try-catch-finally` (UC15).
 - Sort passenger bogie capacities manually using Bubble Sort (UC16).
+- Sort bogie names alphabetically using `Arrays.sort()` (UC17).
 
 ## Use Cases
 
@@ -47,6 +48,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC14 | Handle Invalid Bogie Capacity | `Custom Exception` |
 | UC15 | Safe Cargo Assignment Using try-catch-finally | `Runtime Exception` |
 | UC16 | Sort Passenger Bogies by Capacity | `Bubble Sort` |
+| UC17 | Sort Bogie Names Using Arrays.sort() | `Arrays.sort()` |
 
 ## Prerequisites
 
@@ -86,6 +88,7 @@ java -cp out UseCase13TrainConsistManagementApp
 java -cp out UseCase14TrainConsistManagementApp
 java -cp out UseCase15TrainConsistManagementApp
 java -cp out UseCase16TrainConsistManagementApp
+java -cp out UseCase17TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -111,6 +114,7 @@ src/
     UseCase14TrainConsistManagementApp.java
     UseCase15TrainConsistManagementApp.java
     UseCase16TrainConsistManagementApp.java
+    UseCase17TrainConsistManagementApp.java
 ```
 
 ## Notes
