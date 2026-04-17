@@ -1,67 +1,49 @@
 # Train Consist Management App
 
-A console-based Java project that models how a railway system manages a train consist. Each use case is a focused, runnable example that teaches one data-structure concept through a realistic train scenario.
+Train Consist Management App is a simple Java console project that shows how a railway system can manage a train consist, which is the set of bogies attached to an engine.
 
-## Highlights
+The project is split into small use cases. Each use case focuses on one Java concept and one train-related problem.
 
-- Clear, incremental use cases from initialization to manual sorting logic.
-- Real-world train operations modeled with core Java collections.
-- Deterministic console output for easy verification and learning.
+## What This Project Covers
 
-## Features (Implemented)
-
-- Initialize a train consist and show initial bogie count (UC1).
-- Add, remove, and check passenger bogies with `ArrayList` (UC2).
-- Enforce unique bogie IDs using `HashSet` (UC3).
-- Maintain ordered consist using `LinkedList` with positional inserts/removals (UC4).
-- Preserve insertion order while preventing duplicates using `LinkedHashSet` (UC5).
-- Map bogie names to capacities using `HashMap` and `entrySet()` iteration (UC6).
-- Sort passenger bogies by capacity using `Comparator` and custom objects (UC7).
-- Filter passenger bogies by capacity using `Stream` pipelines (UC8).
-- Group bogies by type using `Collectors.groupingBy` (UC9).
-- Count total train seats using `map()` and `reduce()` (UC10).
-- Validate train IDs and cargo codes using `Pattern` and `Matcher` (UC11).
-- Validate goods bogie safety rules using `allMatch()` and lambdas (UC12).
-- Compare loop and stream filtering performance using `System.nanoTime()` (UC13).
-- Reject invalid passenger bogies using a custom checked exception (UC14).
-- Safely handle runtime cargo assignment failures using `try-catch-finally` (UC15).
-- Sort passenger bogie capacities manually using Bubble Sort (UC16).
-- Sort bogie names alphabetically using `Arrays.sort()` (UC17).
-- Search for a bogie ID in unsorted data using Linear Search (UC18).
-- Search for a bogie ID efficiently using Binary Search on sorted data (UC19).
-- Prevent invalid search operations by throwing `IllegalStateException` on empty data (UC20).
+- Passenger bogies with seat capacity
+- Goods bogies with cargo rules
+- Train composition and ordering
+- Sorting and searching
+- Validation and exception handling
+- Streams, collections, and basic algorithms
 
 ## Use Cases
 
-| Use Case | Title | Data Structure |
+| Use Case | Topic | Java Concept |
 | --- | --- | --- |
-| UC1 | Initialize Train and Display Consist Summary | `List` / `ArrayList` |
-| UC2 | Add Passenger Bogies to Train | `ArrayList` |
-| UC3 | Track Unique Bogie IDs | `HashSet` |
-| UC4 | Maintain Ordered Bogie Consist | `LinkedList` |
-| UC5 | Preserve Insertion Order of Bogies | `LinkedHashSet` |
-| UC6 | Map Bogie to Capacity | `HashMap` |
-| UC7 | Sort Bogies by Capacity | `List` + `Comparator` |
-| UC8 | Filter Passenger Bogies Using Streams | `Stream API` |
-| UC9 | Group Bogies by Type | `Collectors.groupingBy` |
-| UC10 | Count Total Seats in Train | `map()` + `reduce()` |
-| UC11 | Validate Train ID & Cargo Codes | `Pattern` + `Matcher` |
-| UC12 | Safety Compliance Check for Goods Bogies | `allMatch()` + `Predicate` |
-| UC13 | Performance Comparison (Loops vs Streams) | `System.nanoTime()` |
-| UC14 | Handle Invalid Bogie Capacity | `Custom Exception` |
-| UC15 | Safe Cargo Assignment Using try-catch-finally | `Runtime Exception` |
-| UC16 | Sort Passenger Bogies by Capacity | `Bubble Sort` |
-| UC17 | Sort Bogie Names Using Arrays.sort() | `Arrays.sort()` |
-| UC18 | Linear Search for Bogie ID | `Linear Search` |
-| UC19 | Binary Search for Bogie ID | `Binary Search` |
-| UC20 | Exception Handling During Search Operations | `IllegalStateException` |
+| UC1 | Start with an empty train consist | `List`, `ArrayList` |
+| UC2 | Add and remove passenger bogies | `ArrayList` |
+| UC3 | Keep bogie IDs unique | `HashSet` |
+| UC4 | Maintain bogie order | `LinkedList` |
+| UC5 | Keep insertion order without duplicates | `LinkedHashSet` |
+| UC6 | Store bogie capacity values | `HashMap` |
+| UC7 | Sort bogies by capacity | `Comparator` |
+| UC8 | Filter high-capacity bogies | `Stream`, `filter()` |
+| UC9 | Group bogies by type | `Collectors.groupingBy()` |
+| UC10 | Count total seats in the train | `map()`, `reduce()` |
+| UC11 | Validate train ID and cargo code format | `Pattern`, `Matcher` |
+| UC12 | Check goods bogie safety rules | `allMatch()`, lambda |
+| UC13 | Compare loop and stream performance | `System.nanoTime()` |
+| UC14 | Block invalid passenger capacity | Custom checked exception |
+| UC15 | Handle unsafe cargo assignment safely | `try-catch-finally` |
+| UC16 | Sort capacities using Bubble Sort | Manual algorithm |
+| UC17 | Sort bogie names alphabetically | `Arrays.sort()` |
+| UC18 | Find a bogie ID using Linear Search | Sequential search |
+| UC19 | Find a bogie ID using Binary Search | Divide and conquer |
+| UC20 | Stop searching when no bogies exist | `IllegalStateException` |
 
-## Prerequisites
+## Requirements
 
-- Java 8+ (JDK)
-- Command line (PowerShell / CMD / Terminal)
+- Java 8 or later
+- Command line, PowerShell, or terminal
 
-## Quick Start
+## How To Run
 
 Compile all use cases:
 
@@ -69,67 +51,32 @@ Compile all use cases:
 javac -d out src/usecases/*.java
 ```
 
-Run a specific use case (example UC1):
+Run one use case:
 
 ```bash
 java -cp out UseCase1TrainConsistManagementApp
 ```
 
-Run all use cases one by one:
+Examples:
 
 ```bash
-java -cp out UseCase1TrainConsistManagementApp
-java -cp out UseCase2TrainConsistManagementApp
-java -cp out UseCase3TrainConsistManagementApp
-java -cp out UseCase4TrainConsistManagementApp
-java -cp out UseCase5TrainConsistManagementApp
-java -cp out UseCase6TrainConsistManagementApp
-java -cp out UseCase7TrainConsistManagementApp
-java -cp out UseCase8TrainConsistManagementApp
-java -cp out UseCase9TrainConsistManagementApp
 java -cp out UseCase10TrainConsistManagementApp
-java -cp out UseCase11TrainConsistManagementApp
-java -cp out UseCase12TrainConsistManagementApp
-java -cp out UseCase13TrainConsistManagementApp
-java -cp out UseCase14TrainConsistManagementApp
 java -cp out UseCase15TrainConsistManagementApp
-java -cp out UseCase16TrainConsistManagementApp
-java -cp out UseCase17TrainConsistManagementApp
-java -cp out UseCase18TrainConsistManagementApp
-java -cp out UseCase19TrainConsistManagementApp
 java -cp out UseCase20TrainConsistManagementApp
 ```
 
 ## Project Structure
 
-```
+```text
 src/
-  TrainConsistManagementApp/
-    TrainConsistManagementApp.java
   usecases/
     UseCase1TrainConsistManagementApp.java
-    UseCase2TrainConsistManagementApp.java
-    UseCase3TrainConsistManagementApp.java
-    UseCase4TrainConsistManagementApp.java
-    UseCase5TrainConsistManagementApp.java
-    UseCase6TrainConsistManagementApp.java
-    UseCase7TrainConsistManagementApp.java
-    UseCase8TrainConsistManagementApp.java
-    UseCase9TrainConsistManagementApp.java
-    UseCase10TrainConsistManagementApp.java
-    UseCase11TrainConsistManagementApp.java
-    UseCase12TrainConsistManagementApp.java
-    UseCase13TrainConsistManagementApp.java
-    UseCase14TrainConsistManagementApp.java
-    UseCase15TrainConsistManagementApp.java
-    UseCase16TrainConsistManagementApp.java
-    UseCase17TrainConsistManagementApp.java
-    UseCase18TrainConsistManagementApp.java
-    UseCase19TrainConsistManagementApp.java
+    ...
     UseCase20TrainConsistManagementApp.java
 ```
 
 ## Notes
 
-- Each use case is intentionally console-based and deterministic for clarity.
-- Build output is ignored using `.gitignore` to keep the repo clean.
+- All use cases are small, console-based, and easy to run one by one.
+- Output is kept simple so behavior is easy to read and verify.
+- Build files in `out/` are ignored to keep the repository clean.
