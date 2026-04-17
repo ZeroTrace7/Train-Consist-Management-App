@@ -4,7 +4,7 @@ A console-based Java project that models how a railway system manages a train co
 
 ## Highlights
 
-- Clear, incremental use cases from initialization to performance benchmarking.
+- Clear, incremental use cases from initialization to fail-fast validation.
 - Real-world train operations modeled with core Java collections.
 - Deterministic console output for easy verification and learning.
 
@@ -23,6 +23,7 @@ A console-based Java project that models how a railway system manages a train co
 - Validate train IDs and cargo codes using `Pattern` and `Matcher` (UC11).
 - Validate goods bogie safety rules using `allMatch()` and lambdas (UC12).
 - Compare loop and stream filtering performance using `System.nanoTime()` (UC13).
+- Reject invalid passenger bogies using a custom checked exception (UC14).
 
 ## Use Cases
 
@@ -41,6 +42,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC11 | Validate Train ID & Cargo Codes | `Pattern` + `Matcher` |
 | UC12 | Safety Compliance Check for Goods Bogies | `allMatch()` + `Predicate` |
 | UC13 | Performance Comparison (Loops vs Streams) | `System.nanoTime()` |
+| UC14 | Handle Invalid Bogie Capacity | `Custom Exception` |
 
 ## Prerequisites
 
@@ -77,6 +79,7 @@ java -cp out UseCase10TrainConsistManagementApp
 java -cp out UseCase11TrainConsistManagementApp
 java -cp out UseCase12TrainConsistManagementApp
 java -cp out UseCase13TrainConsistManagementApp
+java -cp out UseCase14TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -99,6 +102,7 @@ src/
     UseCase11TrainConsistManagementApp.java
     UseCase12TrainConsistManagementApp.java
     UseCase13TrainConsistManagementApp.java
+    UseCase14TrainConsistManagementApp.java
 ```
 
 ## Notes
