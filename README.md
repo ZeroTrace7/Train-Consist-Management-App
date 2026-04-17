@@ -4,7 +4,7 @@ A console-based Java project that models how a railway system manages a train co
 
 ## Highlights
 
-- Clear, incremental use cases from initialization to key-value mappings.
+- Clear, incremental use cases from initialization to object sorting.
 - Real-world train operations modeled with core Java collections.
 - Deterministic console output for easy verification and learning.
 
@@ -16,6 +16,7 @@ A console-based Java project that models how a railway system manages a train co
 - Maintain ordered consist using `LinkedList` with positional inserts/removals (UC4).
 - Preserve insertion order while preventing duplicates using `LinkedHashSet` (UC5).
 - Map bogie names to capacities using `HashMap` and `entrySet()` iteration (UC6).
+- Sort passenger bogies by capacity using `Comparator` and custom objects (UC7).
 
 ## Use Cases
 
@@ -27,6 +28,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC4 | Maintain Ordered Bogie Consist | `LinkedList` |
 | UC5 | Preserve Insertion Order of Bogies | `LinkedHashSet` |
 | UC6 | Map Bogie to Capacity | `HashMap` |
+| UC7 | Sort Bogies by Capacity | `List` + `Comparator` |
 
 ## Prerequisites
 
@@ -56,6 +58,7 @@ java -cp out UseCase3TrainConsistManagementApp
 java -cp out UseCase4TrainConsistManagementApp
 java -cp out UseCase5TrainConsistManagementApp
 java -cp out UseCase6TrainConsistManagementApp
+java -cp out UseCase7TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -71,6 +74,7 @@ src/
     UseCase4TrainConsistManagementApp.java
     UseCase5TrainConsistManagementApp.java
     UseCase6TrainConsistManagementApp.java
+    UseCase7TrainConsistManagementApp.java
 ```
 
 ## Notes
