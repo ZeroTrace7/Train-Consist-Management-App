@@ -4,7 +4,7 @@ A console-based Java project that models how a railway system manages a train co
 
 ## Highlights
 
-- Clear, incremental use cases from initialization to regex validation.
+- Clear, incremental use cases from initialization to safety-rule validation.
 - Real-world train operations modeled with core Java collections.
 - Deterministic console output for easy verification and learning.
 
@@ -21,6 +21,7 @@ A console-based Java project that models how a railway system manages a train co
 - Group bogies by type using `Collectors.groupingBy` (UC9).
 - Count total train seats using `map()` and `reduce()` (UC10).
 - Validate train IDs and cargo codes using `Pattern` and `Matcher` (UC11).
+- Validate goods bogie safety rules using `allMatch()` and lambdas (UC12).
 
 ## Use Cases
 
@@ -37,6 +38,7 @@ A console-based Java project that models how a railway system manages a train co
 | UC9 | Group Bogies by Type | `Collectors.groupingBy` |
 | UC10 | Count Total Seats in Train | `map()` + `reduce()` |
 | UC11 | Validate Train ID & Cargo Codes | `Pattern` + `Matcher` |
+| UC12 | Safety Compliance Check for Goods Bogies | `allMatch()` + `Predicate` |
 
 ## Prerequisites
 
@@ -71,6 +73,7 @@ java -cp out UseCase8TrainConsistManagementApp
 java -cp out UseCase9TrainConsistManagementApp
 java -cp out UseCase10TrainConsistManagementApp
 java -cp out UseCase11TrainConsistManagementApp
+java -cp out UseCase12TrainConsistManagementApp
 ```
 
 ## Project Structure
@@ -91,6 +94,7 @@ src/
     UseCase9TrainConsistManagementApp.java
     UseCase10TrainConsistManagementApp.java
     UseCase11TrainConsistManagementApp.java
+    UseCase12TrainConsistManagementApp.java
 ```
 
 ## Notes
